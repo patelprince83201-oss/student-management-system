@@ -1,5 +1,5 @@
  import express from "express";
-import routes from "./routes/routes.js";
+import router from "./routes/route";
 import "dotenv/config";
 import cors from"cors"
 
@@ -10,7 +10,7 @@ app.use(cors({
 }))
 app.use(express.json());
 
-app.use("/students", routes);
+app.use("/students", router);
 
 
 
